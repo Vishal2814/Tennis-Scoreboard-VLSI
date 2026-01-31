@@ -30,15 +30,15 @@ Tennis-Scoreboard-FSM/
 │   └── modelsim/
 │       └── msim_transcript.txt      # Simulation console output
 │
-├── scripts/
-│   └── transcript_to_csv.py         # Transcript → CSV parser
+|
+│──Generate_CSV .py         # Transcript → CSV parser
 │
-├── gui/
-│   └── tennis_gui.py                # PyQt5 scoreboard GUI
+|
+│── CSV_of_Scores.csv                # Auto-generated match data
 │
-├── CSV_of_Scores.csv                # Auto-generated match data
+|── Tennis_Board_GUI.py                # PyQt5 scoreboard GUI
 │
-├── [README.md](http://readme.md/)
+├── [README.md]
 └── LICENSE
 ```
 
