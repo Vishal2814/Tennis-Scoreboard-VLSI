@@ -1,0 +1,9 @@
+
+State Machine - |tennis_score_fsm|state
+Name state.S_GAME_P2 state.S_GAME_P1 state.S_ADV_P2 state.S_ADV_P1 state.S_DEUCE state.S_NORMAL 
+state.S_NORMAL 0 0 0 0 0 0 
+state.S_DEUCE 0 0 0 0 1 1 
+state.S_ADV_P1 0 0 0 1 0 1 
+state.S_ADV_P2 0 0 1 0 0 1 
+state.S_GAME_P1 0 1 0 0 0 1 
+state.S_GAME_P2 1 0 0 0 0 1 

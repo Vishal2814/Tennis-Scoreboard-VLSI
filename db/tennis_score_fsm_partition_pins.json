@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "p1_game_win",
+					"strict" : false
+				},
+				{
+					"name" : "p2_game_win",
+					"strict" : false
+				},
+				{
+					"name" : "p1_point",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "p2_point",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

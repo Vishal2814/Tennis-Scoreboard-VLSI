@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# do tennis_score_fsm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/Vishal/Software/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/VLSI/Tennis\ Score\ Board {D:/VLSI/Tennis Score Board/tennis_score_fsm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:07:07 on Jan 30,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/VLSI/Tennis Score Board" D:/VLSI/Tennis Score Board/tennis_score_fsm.sv 
+# -- Compiling module tennis_score_fsm
+# 
+# Top level modules:
+# 	tennis_score_fsm
+# End time: 16:07:07 on Jan 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/VLSI/Tennis\ Score\ Board {D:/VLSI/Tennis Score Board/tennis_score_fsm_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:07:07 on Jan 30,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/VLSI/Tennis Score Board" D:/VLSI/Tennis Score Board/tennis_score_fsm_tb.sv 
+# -- Compiling module tennis_score_fsm_tb
+# 
+# Top level modules:
+# 	tennis_score_fsm_tb
+# End time: 16:07:07 on Jan 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tennis_score_fsm_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tennis_score_fsm_tb 
+# Start time: 16:07:07 on Jan 30,2026
+# Loading sv_std.std
+# Loading work.tennis_score_fsm_tb
+# Loading work.tennis_score_fsm
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# [T=45000 ns][PHASE=1][NORMAL][P1=0 | P2=0][WIN1=0 WIN2=0]
+# [T=65000 ns][PHASE=1][NORMAL][P1=15 | P2=0][WIN1=0 WIN2=0]
+# [T=85000 ns][PHASE=1][NORMAL][P1=30 | P2=0][WIN1=0 WIN2=0]
+# [T=105000 ns][PHASE=1][NORMAL][P1=40 | P2=0][WIN1=0 WIN2=0]
+# [T=115000 ns][PHASE=1][GAME_P1][P1=40 | P2=0][WIN1=1 WIN2=0]
+# [T=145000 ns][PHASE=2][NORMAL][P1=0 | P2=0][WIN1=0 WIN2=0]
+# [T=165000 ns][PHASE=2][NORMAL][P1=15 | P2=0][WIN1=0 WIN2=0]
+# [T=185000 ns][PHASE=2][NORMAL][P1=30 | P2=0][WIN1=0 WIN2=0]
+# [T=205000 ns][PHASE=2][NORMAL][P1=40 | P2=0][WIN1=0 WIN2=0]
+# [T=225000 ns][PHASE=2][NORMAL][P1=40 | P2=15][WIN1=0 WIN2=0]
+# [T=245000 ns][PHASE=2][NORMAL][P1=40 | P2=30][WIN1=0 WIN2=0]
+# [T=265000 ns][PHASE=2][DEUCE][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=285000 ns][PHASE=2][ADV_P1][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=305000 ns][PHASE=2][DEUCE][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=325000 ns][PHASE=2][ADV_P1][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=335000 ns][PHASE=2][GAME_P1][P1=40 | P2=40][WIN1=1 WIN2=0]
+# [T=375000 ns][PHASE=3][NORMAL][P1=0 | P2=0][WIN1=0 WIN2=0]
+# [T=395000 ns][PHASE=3][NORMAL][P1=15 | P2=0][WIN1=0 WIN2=0]
+# [T=415000 ns][PHASE=3][NORMAL][P1=30 | P2=0][WIN1=0 WIN2=0]
+# [T=435000 ns][PHASE=3][NORMAL][P1=40 | P2=0][WIN1=0 WIN2=0]
+# [T=455000 ns][PHASE=3][NORMAL][P1=40 | P2=15][WIN1=0 WIN2=0]
+# [T=475000 ns][PHASE=3][NORMAL][P1=40 | P2=30][WIN1=0 WIN2=0]
+# [T=495000 ns][PHASE=3][DEUCE][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=515000 ns][PHASE=3][ADV_P2][P1=40 | P2=40][WIN1=0 WIN2=0]
+# [T=525000 ns][PHASE=3][GAME_P2][P1=40 | P2=40][WIN1=0 WIN2=1]
+# === SIMULATION COMPLETE ===
+# ** Note: $finish    : D:/VLSI/Tennis Score Board/tennis_score_fsm_tb.sv(146)
+#    Time: 545 ns  Iteration: 1  Instance: /tennis_score_fsm_tb
+# 1
+# Break in Module tennis_score_fsm_tb at D:/VLSI/Tennis Score Board/tennis_score_fsm_tb.sv line 146
+# End time: 16:09:18 on Jan 30,2026, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0
